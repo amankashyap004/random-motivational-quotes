@@ -121,6 +121,10 @@ body {
     /* height: 60vh; */
   }
 
+  .quotes-contain {
+    padding: 1rem;
+  }
+
   .quotes {
     line-height: 1.4;
     font-size: 1.5em;
