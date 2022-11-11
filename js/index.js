@@ -1,9 +1,6 @@
 
 let quotesBtn = document.getElementById("quotes-btn");
-quotesBtn.addEventListener("click", quotesBtnFunction)
-
-function quotesBtnFunction(){
-    
+quotesBtn.addEventListener("click", ()=>{
     // let randomQuotes = Math.floor(Math.random() * (quotes().length-1));
     // let output = quotes()[randomQuotes]; 
 
@@ -25,6 +22,6 @@ function quotesBtnFunction(){
 
     let quotesOutputAuthor = document.getElementById("quotes-output-author")
     quotesOutputAuthor.textContent = outputAuthorWithTrim;
-}
+})
 
  
