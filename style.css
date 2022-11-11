@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Farsan&family=Poppins:wght@500&display=swap");
+
+:root {
+  --bg-color: rgb(202, 203, 228);
+  --bg-box: rgb(205, 112, 112);
+  --text-head: rgb(26, 4, 167);
+  --text-quotes: rgb(33, 1, 69);
+  --text-author: rgb(21, 0, 255);
+  --border-color: blue;
+  --bg-btn: rgb(201, 131, 182);
+  --shadow-color-hover: rgba(208, 77, 21, 0.788);
+  --shadow-color: rgba(33, 0, 220, 0.758);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.heading {
+  font-size: 1.8em;
+  text-align: center;
+  color: var(--text-head);
+  text-shadow: 1px 1px 1px red, 2px 2px 1px red;
+}
+
+.quotes-box {
+  height: 40vh;
+  width: 50vw;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  margin: 2rem 0;
+  box-shadow: 0 0 15px 1px var(--shadow-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.quotes-box:hover {
+  box-shadow: 0 0 15px 1px var(--shadow-color-hover);
+}
+
+.quotes-contain {
+  padding: 1.5rem 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quotes {
+  color: var(--text-quotes);
+  line-height: 1.6;
+  font-size: 1.8em;
+  padding: .2em .4em;
+  font-weight: 600;
+  font-family: "Farsan", cursive;
+  text-shadow: 1px 1px 1px rgb(244, 30, 30);
+}
+
+.author-name{
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: var(--text-author);
+
+}
+
+.btn-container {
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 2.8rem;
+  border: 2px solid var(--border-color);
+  border-radius: 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: var(--bg-btn);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 15px 1px var(--shadow-color);
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px 1px var(--shadow-color-hover);
+}
+
+.btn:active {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 800px) {
+  .heading {
+    font-size: 1.2em;
+  }
+
+  .quotes-box {
+    width: 90vw;
+    /* height: 60vh; */
+  }
+
+  .quotes {
+    line-height: 1.4;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .author-name{
+    font-size: 1.5em;
+  }
+}
